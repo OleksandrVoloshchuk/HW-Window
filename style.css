@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dialog-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(32, 32, 64, .8);
+}
+
+.dialog-form {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 650px;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    background: #F5F5FA;
+    box-shadow: 0px 15px 80px 0px rgba(40, 40, 86, 0.50);
+}
+
+.form-text {
+    display: flex;
+    padding: 15px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid #FFF;
+    background: #FFF;
+}
+
+input::placeholder {
+    color: #B3B3BA;
+    line-height: 26px; /* 162.5% */
+}
+
+.height-form:nth-child(2) {
+    height: 130px;
+    top: 0;
+}
+
+.title-form {
+    font-size: 38px;
+    font-weight: 700;
+    background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.closed {
+    background-color: #F5F5FA;
+    border: 0;
+    border-radius: 10px;
+    background-image: url(images/Close.png);
+    background-repeat: no-repeat;
+    top: -30px;
+    right: -30px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+}
+
+.send-message {
+    display: flex;
+    padding: 18px 30px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: #24A3FF;
+    border: 0;
+    box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.50);
+}
+
+.text-button {
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+}
+
+.question-title {
+    color: #B3B3BA;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.box-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 15px;
+}
+
